@@ -1,11 +1,14 @@
-# PanoramaGL
-Android全景图
+# Android Panorama
 
-感谢Javier Baez大神
+Use Code can be generated according to their own needs corresponding jar, it can also be introduced directly into your own use PanoramaGL_beta.jar project compiled
 
-主要增加了armeabi armeabi-v7a x86 mips x86_64 arm64-v8a mips64 平台.so文件，编译后PanoramaGL_beta.jar。导入eclipse即可！
+# Supported Platform Architecture
+- armeabi、arm64-v8a
+- armeabi-v7a
+- x86、x86_64
+- mips、mips64
 
-简单介绍：
+
 PanoramaGL Library
 ==================
 Version 0.2 beta (September/2013)
