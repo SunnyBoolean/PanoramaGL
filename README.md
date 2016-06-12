@@ -9,7 +9,8 @@ Use Code can be generated according to their own needs corresponding jar, it can
 - mips、mips64
 
 # Application screenshot
-
+![](https://github.com/codedavid/PanoramaGL/blob/master/panoramagl.png)
+![](https://github.com/codedavid/PanoramaGL/blob/master/GIF_20160612_154147.gif)
 
 PanoramaGL Library
 ==================
