@@ -8,6 +8,8 @@ Use Code can be generated according to their own needs corresponding jar, it can
 - x86、x86_64
 - mips、mips64
 
+# Application screenshot
+
 
 PanoramaGL Library
 ==================
