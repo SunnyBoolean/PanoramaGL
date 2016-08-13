@@ -14,8 +14,8 @@ Build apps that display 3D scenes with binocular rendering, render spatial audio
 **Using Android Studio**  
 After you've read up on the Google VR SDK for Android, it'll be time to create your own applications. Here's how.
 
-First, grab all the required .AAR files from the libraries folder of the sdk. To determine which .AARs you need to depend on, you can examine the build.gradle files of the various sample 
-apps. For example,samples/treasurehunt/build.gradle's dependency section has the following entries:
+1. First, grab all the required .AAR files from the libraries folder of the sdk. To determine which .AARs you need to depend on, you can examine the build.gradle files of the various sample 
+apps. For example,samples/treasurehunt/build.gradle's dependency section has the following entries:  
 ```
 dependencies {
   compile project(':libraries-audio')
@@ -24,9 +24,10 @@ dependencies {
 }
 ```
 This indicates that an application similar to the Treasure Hunt sample needs the audio, common, and core libraries.  
-Create new modules for each of these libraries. Using Android Studio's GUI, this can be done via `File` -> `New` -> `New Module`. Select Import `.JAR/.AAR` Package. Locate one of the `.AARs` and import it.  
-Then add this new module as a dependency to your main app via `File` > `Project Structure` > `Modules` (on the left side's section list) > `YOUR APP's MODULE NAME` > Dependencies (on the right side's tab list) -> '+' -> Module Dependency.  
-Once this is done for all of the required libraries, you will be able to reference code in the Google VR SDK in your app.  
+2. Create new modules for each of these libraries. Using Android Studio's GUI, this can be done via `File` -> `New` -> `New Module`. Select Import `.JAR/.AAR` Package. Locate one of the `.AARs` and import it.  
+3. Then add this new module as a dependency to your main app via `File` > `Project Structure` > `Modules` (on the left side's section list) > `YOUR APP's MODULE NAME` > Dependencies (on the right side's tab list) -> '+' -> Module Dependency.  
+
+Once this is done for all of the required libraries, you will be able to reference code in the Google VR SDK in your app.   
 **Directly using Gradle**  
 Using the steps above will cause Android Studio to generate new modules and edit your .gradle files automatically. Alternatively, you can directly include the .AARs in your application's module by editing that specific module's build.gradlefile and adding the following entries:  
 ```
