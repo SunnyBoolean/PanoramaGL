@@ -14,7 +14,7 @@ Build apps that display 3D scenes with binocular rendering, render spatial audio
 **Using Android Studio**  
 After you've read up on the Google VR SDK for Android, it'll be time to create your own applications. Here's how.
 
-1. First, grab all the required .AAR files from the libraries folder of the sdk. To determine which .AARs you need to depend on, you can examine the build.gradle files of the various sample
+ 1. First, grab all the required .AAR files from the libraries folder of the sdk. To determine which .AARs you need to depend on, you can examine the build.gradle files of the various sample
 apps. For example,samples/treasurehunt/build.gradle's dependency section has the following entries:  
 ```
 dependencies {
@@ -23,9 +23,10 @@ dependencies {
   compile project(':libraries-core')
 }
 ```
+
 This indicates that an application similar to the Treasure Hunt sample needs the audio, common, and core libraries.  
-2.  Create new modules for each of these libraries. Using Android Studio's GUI, this can be done via `File` -> `New` -> `New Module`. Select Import `.JAR/.AAR` Package. Locate one of the `.AARs` and import it.  
-3.  Then add this new module as a dependency to your main app via `File` > `Project Structure` > `Modules` (on the left side's section list) > `YOUR APP's MODULE NAME` > Dependencies (on the right side's tab list) -> '+' -> Module Dependency.  
+ 2.  Create new modules for each of these libraries. Using Android Studio's GUI, this can be done via `File` -> `New` -> `New Module`. Select Import `.JAR/.AAR` Package. Locate one of the `.AARs` and import it.  
+ 3.  Then add this new module as a dependency to your main app via `File` > `Project Structure` > `Modules` (on the left side's section list) > `YOUR APP's MODULE NAME` > Dependencies (on the right side's tab list) -> '+' -> Module Dependency.  
 
 Once this is done for all of the required libraries, you will be able to reference code in the Google VR SDK in your app.   
 **Directly using Gradle**  
@@ -81,7 +82,7 @@ Imagery for VR view isn’t limited to captures from the real world. CGI software
 VR view的图像不仅限于捕获从真实的世界。CGI软件可以生成360度图片和视频 从建筑模型或电影预告片。下面列出了我们的一些最受欢迎的获取解决方案:  
 
  * [360 Panorama Capture for Unity](https://www.assetstore.unity3d.com/en/#!/content/38755): A free, easy to use 360 capture plugin for Unity.
-[Unreal](https://www.unrealengine.com/): The latest version of UE4 has built-in 360 capture solutions.
-[Domemaster3D for Maya](http://www.andrewhazelden.com/blog/2012/04/domemaster3d-stereoscopic-shader-for-autodesk-maya/): A free solution for capturing mono and stereo 360 images from Maya.
-[Renderman](https://drive.google.com/folderview?id=0B0lYKpimsJgWfjFwa2xLQlVGNnJXcGxvbmNJbzIwUkRWQ2YtOHB5blNMNjlXSUlxbmJNVVU&usp=drive_web): Open source library for capturing 360 content.
-[Rendering Omnidirectional Stereo Content](https://developers.google.com/cardboard/jump/rendering-ods-content.pdf): A whitepaper for anyone interested in writing their own 360 
+ * [Unreal](https://www.unrealengine.com/): The latest version of UE4 has built-in 360 capture solutions.
+ * [Domemaster3D for Maya](http://www.andrewhazelden.com/blog/2012/04/domemaster3d-stereoscopic-shader-for-autodesk-maya/): A free solution for capturing mono and stereo 360 images from Maya.
+ * [Renderman](https://drive.google.com/folderview?id=0B0lYKpimsJgWfjFwa2xLQlVGNnJXcGxvbmNJbzIwUkRWQ2YtOHB5blNMNjlXSUlxbmJNVVU&usp=drive_web): Open source library for capturing 360 content.
+ * [Rendering Omnidirectional Stereo Content](https://developers.google.com/cardboard/jump/rendering-ods-content.pdf): A whitepaper for anyone interested in writing their own 360 
