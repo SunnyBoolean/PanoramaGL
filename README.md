@@ -8,15 +8,12 @@ Use Code can be generated according to their own needs corresponding jar, it can
 - x86、x86_64
 - mips、mips64
 
-# Application screenshot
+# screenshot
 ![](https://github.com/codedavid/PanoramaGL/blob/master/panoramagl.png)
 ![](https://github.com/codedavid/PanoramaGL/blob/master/GIF_20160612_154147.gif)
 
 PanoramaGL Library
 ==================
-Version 0.2 beta (September/2013)
-Copyright (c) 2010 Javier Baez <javbaezga@gmail.com>
-
 1. Features
 ===========
 - SDK 2.0 to 4.2.2.
@@ -43,16 +40,12 @@ Copyright (c) 2010 Javier Baez <javbaezga@gmail.com>
 
 2.1. Third-party code used by PanoramaGL
 ========================================
-* glues: OpenGL ES 1.0 CM port of part of GLU by Mike Gorchak <mike@malva.ua>. Copyright (c) 1991-2000 Silicon Graphics, licensed under SGI FREE SOFTWARE LICENSE B version 2.0.
+* glues: OpenGL ES 1.0 CM port of part of GLU by Mike Gorchak. Copyright (c) 1991-2000 Silicon Graphics, licensed under SGI FREE SOFTWARE LICENSE B version 2.0.
 * Matrix, MatrixGrabber, MatrixStack and MatrixTrackingGL classes: Copyright (c) 2007 The Android Open Source Project, licensed under Apache License version 2.0.
 * HttpClient 3.1: Copyright (c) Apache Software Foundation, licensed under Apache License version 2.0.
 * EasySSLSocketFactory and EasyX509TrustManager classes: Copyright (c) Apache Software Foundation, licensed under Apache License version 2.0.
 * PLVector3 and PLIntersection classes: Port from C++ to Java of "Demonstration of a line mesh intersection test" example by Jonathan Kreuzer.
 * PLTokenizer class: Class based in the article "Writing a Parser in Java: The Tokenizer" by Cogito Learning.
-
-2.2. Panoramic images used by HelloPanoramaGL example
-=====================================================
-* quito1, quito2 and quito3 images: Copyright (c) 2013 Geovanny Raura <georaura@gmail.com>.
 
 3. Requirements
 ===============
@@ -140,7 +133,7 @@ Note: For this code, you need to have a file named "json_spherical.data" in "htt
 
 6.2. JSON Protocol
 ==================
-
+```
 {
     "urlBase": "file:///sdcard/files",		//URL base where the files are
 											//The options are: http://, https://, res:// for application resources and file:// for the file system
@@ -233,7 +226,7 @@ Note: For this code, you need to have a file named "json_spherical.data" in "htt
 		}
 	]
 }
-
+```
 Notes:
 * keep options retain the settings loaded before the JSON protocol in progress, allowing you to control the settings for creating virtual tours.
 * fov, fovFactor, zoomFactor and zoomLevel should not be used together because they have the same function, where the order of priority is fov, fovFactor, zoomFactor and finally zoomLevel.
@@ -321,11 +314,6 @@ Examples:
 * For more details check the HelloPanoramaGL example, it is compatible with Android 2.0 or higher.
 * To compile the HelloPanoramaGL example, you must import the library as described at the literal 4.1.
 
-8. Supporting this project
-==========================
-If you want to support this project, please donate to my Paypal account:
-
-https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=TN942N9FFXYEL&lc=EC&item_name=PanoramaGL&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 
 
 
