@@ -1,4 +1,5 @@
 # Android Panorama
+Use VR this links [GVR-SDK](https://github.com/codedavid/PanoramaGL/tree/master/gvr-android-sdk)
 
 Use Code can be generated according to their own needs corresponding jar, it can also be introduced directly into your own use PanoramaGL_beta.jar project compiled
 
