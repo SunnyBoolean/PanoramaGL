@@ -42,7 +42,7 @@ repositories{
   }
 }
 ```
-This will tell Gradle to look in the libs subdirectory of your module for the three .AARs. Create that libs subdirectory inside your module's directory and copy the .AARs there. You will need to repeat this for every module that uses those .AARs which will lead to many duplicate .AARs as your project becomes more complex.
+This will tell Gradle to look in the libs subdirectory of your module for the three `.AARs`. Create that libs subdirectory inside your module's directory and copy the `.AARs` there. You will need to repeat this for every module that uses those .AARs which will lead to many duplicate `.AARs` as your project becomes more complex.
 
 ## Embedding VR view
 VR view allows you to embed 360 degree VR media into websites on desktop and mobile, and native apps on Android and iOS. This technology is designed to enable developers of traditional 
